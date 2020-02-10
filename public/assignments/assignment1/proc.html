@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset="utf-8">
+    <title>Project 1: Process Management</title>
+    <link href = "css/style.css" rel = "stylesheet" type = "text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <h1>Operating Systems: Process Management</h1>
+  <nav>
+    <hr>
+    <a href = "index.html">Home</a>
+    <a href = "proc.html" class = "active">Processes</a>
+    <a href = "mem.html">Memory Management</a>
+    <a href = "fs.html">File Systems</a>
+    </nav>
+    <main>
+        <figure id = "me">
+            <img src="img/proc.jpg" alt = "lifecycle of a process diagram"/>
+        </figure>
+        <div id = "welcomeText">
+            <p>Process management is the task of managing all processes that are running on a computer.<br>
+            Modern computers are fast enough to preform multiple tasks simultaniously. If the computer only preformed one task at a time, it would be a waste of resources.<br>
+            Kernels have what  is called a scheduler. The scheduler is  responsible for ensuring that the CPU's time is used  efficiently and is shared with all processes running.<br>
+            If the scheduler were to allow for one process to hog up all the resources, then the CPU would be  idle and unresponsive.<br>
+            The method that is used today is that of time-slicing which is where the amount of time a process is allocated to a hardware thead is minisule then it is kicked off while another task is preformed.<br>
+            Not only is time-slicing incorporated, there are also various methods of selecting which process is run next which is the actual scheudler. The scheduler decides priority for each task and<br>
+            puts each task in a priority queue. This queue is the ordering of which tasks will be selected to run next based off of the efficieny of the CPU's resources and time.</p>
+            </div>
+    </main>
+    <footer>
+        <hr>
+            <em>References</em>: <a href = "http://pages.cs.wisc.edu/~remzi/OSTEP/dialogue-virtualization.pdf">http://pages.cs.wisc.edu/~remzi/OSTEP/dialogue-virtualization.pdf</a>
+    </footer>
+  </body>
+</html>
