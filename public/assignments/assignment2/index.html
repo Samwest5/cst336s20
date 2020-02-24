@@ -1,0 +1,79 @@
+<!DOCTYPE = "html">
+<html>
+  <head>
+      <meta charset = "utf-8">
+      <title>US Quiz</title>
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link href="stylesheets/style.css" rel="stylesheet"/>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js" ></script> 
+  </head>
+  <body class="text-center">
+    <h1 class="jumbotron">Unit Converter</h1>
+
+    <div class="box">
+      <h4>Weight Conversion</h4>
+      <div class="inputs">
+        <input type="text" class="input number" id="weight">
+        <span class="input">
+          <select id="weightFrom">
+            <option value="pounds">Pounds</option>
+            <option value="kilograms">Kilograms</option>
+          </select>
+          <span class="to"> To </span>
+          <select id="weightTo">
+            <option value="kilograms">Kilograms</option>
+            <option value="pounds">Pounds</option>
+          </select>
+        </span>
+        <button class="input" id=convertWeight>Convert</button>
+      </div>
+      <div class="calculation" id=weightResult></div>
+    </div>
+
+      <div class="box">
+        <h4>Length Conversion</h4>
+        <div class="inputs">
+          <input type="text" class="input number" id="length">
+          <span class="input">
+            <select id="lengthFrom">
+              <option value="feet">Feet</option>
+              <option value="meters">Meters</option>
+            </select>
+            <span class="to"> To </span>
+            <select id="lengthTo">
+              <option value="meters">Meters</option>
+              <option value="feet">Feet</option>
+            </select>
+          </span>
+          <button class="input" id=convertLength>Convert</button>
+        </div>
+        <div class="calculation" id=lengthResult></div>
+      </div>
+
+      <div class="box">
+        <h4>Temperature Conversion</h4>
+        <div class="inputs">
+          <input type="text" class="input number" id="temperature">
+          <span class="input">
+            <select id="temperatureFrom">
+              <option value="fahrenheit">Fahrenheit</option>
+              <option value="celsius">Celsius</option>
+            </select>
+            <span class="to"> To </span>
+            <select id="temperatureTo">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+            </select>
+          </span>
+          <button class="input" id=convertTemperature>Convert</button>
+        </div>
+        <div class="calculation" id=temperatureResult></div>
+      </div>
+
+    <script SRC="js/javascript.js"></script>
+  </body>
+
+
+
+</html>

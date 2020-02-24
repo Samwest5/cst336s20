@@ -1,0 +1,41 @@
+body {
+  background-color: #ffffcc;
+
+}
+
+.jumbotron {
+  background-color: #ccffff;
+  
+}
+
+.content {
+  width:75%;
+  margin:auto;
+}
+
+.box {
+  margin: 10px 40px 10px 40px;
+  padding: 20px;
+  border:solid 2px black;
+}
+
+.calculation {
+  border: dotted 1px black;
+  background-color: white;
+  padding: 0 5px;
+  margin: 10px auto 0 auto;
+  width:200px;
+  height:25px;
+}
+
+.to {
+  margin: 0 10px;
+}
+
+.input {
+  margin:0 20px;
+}
+
+.number {
+  width: 100px;
+}
