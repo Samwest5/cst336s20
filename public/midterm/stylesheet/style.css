@@ -1,0 +1,13 @@
+
+.block div{
+  display: inline-block;
+}
+.info div {
+  border: 5px;
+  border-radius: 10px;
+}
+
+.cover div {
+  margin: 50px;
+  font-size: 25px;
+}

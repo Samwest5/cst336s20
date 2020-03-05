@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link href="stylesheet/style.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
@@ -43,7 +45,6 @@
         url: `https://openlibrary.org/api/books?bibkeys=ISBN:${isbn}&format=json&jscmd=data`,
         dataType: "json",
         success: function(result, status) {
-          console.log(result);
           $("#cover").attr("src", result[key]["cover"]["large"]);
           $("#title").html(`Title: ${result[key]["title"]}`);
           let author = "undefined";
@@ -60,7 +61,6 @@
           $("#isbndisplay").html(`ISBN: ${isbn}`);
           $("#pages").html(`Pages: ${result[key]["number_of_pages"]}`);
           $("#result").show();
-          console.log(result);
         }
       })
     });
